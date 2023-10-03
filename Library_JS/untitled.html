@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Library</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function Book(title, author, pages, read){
+		this.title = title
+		this.author = author
+		this.pages = pages
+		this.read = read
+		this.info = function(){
+			if (read === false){
+				return `${title} by ${author}, ${pages} pages, not read yet`;
+			} else {return `${title} by ${author}, ${pages} pages, read`;}
+			}
+		}
+
+		const book1 = new Book('Test', 'Tester Testington', 290, false);
+
+		console.log(book1.info());
+	</script>
+</body>
+</html>

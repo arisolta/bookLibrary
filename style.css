@@ -1,0 +1,78 @@
+html{
+    font-family: Helvetica, sans-serif;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #EF9595;
+    
+    & button{
+        background-color: #EBEF95;
+        height: min-content;
+        margin-left: auto;
+        border-radius: 15px;
+        padding: 8px;
+    }
+}
+
+#popup{
+    visibility: hidden;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */ 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    height: fit-content;
+
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #EFB495;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+
+
+    & label{
+        height: max-content;
+    }
+
+}
+
+#cardHeader{
+    display: flex;
+
+    & button{
+        height: min-content;
+        margin-left: auto;
+        align-self: center;
+    }
+}
+
+
+#main {
+    display: flex;
+    gap: 15px;
+    padding: 25px;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 9px;
+    width: 250px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    padding: 8px;
+}
+
+.elem{
+    font-size: large;
+
+}
